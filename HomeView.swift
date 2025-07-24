@@ -1,5 +1,5 @@
 //
-//  AboutView.swift
+//  HomeView.swift
 //  Navigation
 //
 //  Created by Scholar on 7/24/25.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct AboutView: View {
+struct HomeView: View {
     var body: some View {
-        Text("About View")
+        Text("Home View")
     }
 }
 
 #Preview {
-    AboutView()
+    HomeView()
 }

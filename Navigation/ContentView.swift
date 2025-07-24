@@ -14,16 +14,18 @@ struct ContentView: View {
                 Text("This is the root view")
                 NavigationLink(destination: SecondView()) {
                     Text("Click me!")
-                    NavigationLink(destination: AboutView()) {
-                        Text("About")
-                    }
-                    NavigationLink(destination: Contact()) {
-                        Text("Contact")
-                    }
-                    NavigationLink(destination: Help()) {
-                        Text("Help")
-                    }
-
+                }
+                NavigationLink(destination: HomeView()) {
+                    Text("Home")
+                }
+                NavigationLink(destination: AboutView()) {
+                    Text("About")
+                }
+                NavigationLink(destination: Contact()) {
+                    Text("Contact")
+                }
+                NavigationLink(destination: Help()) {
+                    Text("Help")
                 }
             }
             .navigationTitle("Home")
