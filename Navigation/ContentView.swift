@@ -14,12 +14,22 @@ struct ContentView: View {
                 Text("This is the root view")
                 NavigationLink(destination: SecondView()) {
                     Text("Click me!")
+                    NavigationLink(destination: AboutView()) {
+                        Text("About")
+                    }
+                    NavigationLink(destination: Contact()) {
+                        Text("Contact")
+                    }
+                    NavigationLink(destination: Help()) {
+                        Text("Help")
+                    }
+
                 }
             }
+            .navigationTitle("Home")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }
-        .navigationTitle("Home")
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarHidden(true)
     }
 }
 
